@@ -1,0 +1,50 @@
+.container {
+    width: 15em;
+    height: 16em;
+    background-color: bisque;
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: .3em;
+    box-sizing: border-box;
+    border-radius: 15px;
+    padding: .4em;
+}
+
+.Header-container {
+    position: relative;
+}
+
+.Header-container > input {
+    width: 100%;
+    height: 1.5em;
+    font-size: 1em;
+    display: inline-block;
+    text-align: left;
+    border-radius: 1.5em;
+    padding-left: 1em;
+    box-sizing: border-box;
+}
+
+.Header-container >button {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    right: 0px;
+    top: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: #00ffff;
+}
+
+.Header-container >button:hover {
+    background-color: #00aaaa;
+}
