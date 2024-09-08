@@ -1,0 +1,21 @@
+.WeatherCard {
+    background: linear-gradient(135deg, #00b4db, #0083b0); /* Gradient background */
+    color: white; /* White text color */
+    padding: 20px; /* Padding inside the card */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Card shadow for depth */
+    text-align: center; /* Center-align text */
+    max-width: 300px; /* Max width of the card */
+    margin: 20px auto; /* Center the card horizontally */
+    font-family: 'Arial', sans-serif; /* Clean font */
+}
+
+.WeatherCard h2 {
+    font-size: 1.5rem; /* Font size for place name */
+    margin-bottom: 10px; /* Space below the place name */
+}
+
+.WeatherCard h1 {
+    font-size: 3rem; /* Larger font size for temperature */
+    margin: 0; /* No margin on temperature */
+}
