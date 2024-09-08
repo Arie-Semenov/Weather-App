@@ -10,7 +10,6 @@ export default function WeatherContainer() {
     useEffect(() => {
         if (!place) return; // Exit if no place is set
 
-        // Replace with your correct API key
         const apiKey = "6bd562307834b2ca3d71dbe659d43a21"; 
         const url = `https://api.openweathermap.org/data/2.5/weather?q=${place}&appid=${apiKey}&units=metric`;
 
@@ -32,7 +31,7 @@ export default function WeatherContainer() {
             .catch(error => {
                 console.error("Error fetching weather:", error);
             });
-    }, [place]); 
+    }, [place]);
 
     function handleInput(event) {
         setInputValue(event.target.value);
@@ -43,10 +42,17 @@ export default function WeatherContainer() {
     }
 
     return (
-        <div className="container">
-            <div className="Header-container">
-                <input type="text" placeholder="Enter a Country/City" value={inputValue} onChange={handleInput} />
+        <div className="weather-container">
+            <div className="search-bar">
+                <input 
+                    type="text" 
+                    placeholder="Enter a Country/City" 
+                    value={inputValue} 
+                    onChange={handleInput} 
+                />
                 <button onClick={handleSearch}>Search</button>
+            </div>
+            <div className="weather-card-container">
                 <WeatherCard place={place} weather={weather} />
             </div>
         </div>

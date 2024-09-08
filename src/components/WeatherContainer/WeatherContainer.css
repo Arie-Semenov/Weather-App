@@ -1,50 +1,43 @@
-.container {
-    width: 15em;
-    height: 16em;
-    background-color: bisque;
-    font-size: 2em;
+.weather-container {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
-    gap: .3em;
-    box-sizing: border-box;
-    border-radius: 15px;
-    padding: .4em;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 20px;
 }
 
-.Header-container {
-    position: relative;
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
-.Header-container > input {
-    width: 100%;
-    height: 1.5em;
-    font-size: 1em;
-    display: inline-block;
-    text-align: left;
-    border-radius: 1.5em;
-    padding-left: 1em;
-    box-sizing: border-box;
+.search-bar input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    font-size: 16px;
+    width: 250px;
 }
 
-.Header-container >button {
-    width: 70px;
-    height: 70px;
-    position: absolute;
-    right: 0px;
-    top: 0;
-    border-radius: 50%;
+.search-bar button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #0056b3;
+}
+
+.weather-card-container {
     display: flex;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 1.4rem;
-    font-weight: 700;
-    cursor: pointer;
-    background-color: #00ffff;
-}
-
-.Header-container >button:hover {
-    background-color: #00aaaa;
+    width: 100%;
 }
